@@ -1,0 +1,299 @@
+/* styles.css */
+
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set background color */
+body {
+    background-color: #233831; /* Updated background color */
+    color: #8FDCC2; /* Updated text color */
+    font-family: Arial, sans-serif; /* Change font if needed */
+}
+
+/* Red text */
+h1, h2, h3, h4, h5, h6,
+p, a, span, li {
+    color: #8FDCC2; /* Updated text color */
+}
+
+h1{
+    text-align: left;
+}
+
+h2{
+    text-align: center;
+    font-size: 28px; /* Increased font size */
+    background-color: #183128; /* Added background color */
+    padding: 10px 20px; /* Added padding */
+    border-radius: 8px; /* Added border radius */
+    margin: 20px auto; /* Added margin */
+}
+
+h3{
+    font-weight: bold;
+    font-size: 24px; /* Increased font size */
+    padding: 10px; /* Added padding */
+    background-color: #183128; /* Added background color */
+    border-radius: 8px; /* Added border radius */
+    margin-bottom: 10px; /* Added margin */
+}
+
+/* Red border for images and cards */
+img, .card {
+    border: 1px solid #060404; 
+}
+
+/* Red background for sections */
+.section {
+    background-color: #233831; /* Updated background color */
+    padding: 20px;
+    margin: 20px; /* Updated margin */
+    border-radius: 8px; /* Added border radius */
+    border: 2px solid #183128; /* Added border */
+}
+
+/* styles.css */
+
+.social-icons {
+    display: flex;
+    justify-content: center; /* Center align icons horizontally */
+    gap: 20px; /* Add space between icons */
+}
+
+.social-icons a {
+    font-size: 24px; /* Increase the size of icons */
+    color: #8FDCC2; /* Updated text color */
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.social-icons a:hover {
+    transform: scale(2); /* Zoom effect on hover */
+}
+
+
+/* styles.css */
+
+.career-summary {
+    background-color: #233831; /* Updated background color */
+    color: #8FDCC2; /* Updated text color */
+    padding: 20px; /* Updated padding */
+    margin: 20px; /* Updated margin */
+}
+
+.summary-item {
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.summary-item p {
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 10px; /* Add padding */
+    margin: 0; /* Reset margin */
+}
+
+.summary-item strong {
+    font-size: 20px; /* Increase font size */
+    font-weight: bold; /* Make text bold */
+}
+
+
+/* styles.css */
+
+.skill-summary {
+    background-color: #233831; /* Updated background color */
+    padding: 20px; /* Updated padding */
+    margin: 20px; /* Updated margin */
+}
+
+.skill-card {
+    text-align: justify;
+    background-color: #233831; /* Updated background color */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+}
+
+.skill-card h3 {
+    color: #8FDCC2; /* Updated text color */
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.skill-card p {
+    color: #8FDCC2; /* Updated text color */
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* styles.css */
+
+.flagship-programs {
+    background-color: #233831; /* Updated background color */
+    padding: 20px; /* Updated padding */
+    margin: 20px; /* Updated margin */
+}
+
+.program-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.program-card {
+    background-color: #233831; /* Updated background color */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.program-card:hover {
+    transform: translateY(-5px);
+}
+
+.program-card h3 {
+    color: #8FDCC2; /* Updated text color */
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.program-card p {
+    color: #8FDCC2; /* Updated text color */
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* styles.css */
+
+.professional-experience {
+    padding: 20px; /* Updated padding */
+    margin: 20px; /* Updated margin */
+}
+
+.experience-list {
+    list-style: none;
+    padding: 0;
+}
+
+.experience-item {
+    border-bottom: 1px solid #ccc;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.experience-item h3 {
+    color: #8FDCC2; /* Updated text color */
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.experience-item p {
+    color: #8FDCC2; /* Updated text color */
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* CSS styles for slideshow */
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+}
+
+.slide {
+    display: none;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: #fff; /* Updated text color */
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    background-color: rgba(153, 220, 231, 0.5);
+    z-index: 1000;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(41, 238, 238, 0.8);
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* styles.css */
+
+.contact-us {
+    padding: 40px;
+    background-color: #233831;
+    color: #8FDCC2;
+    /* text-align: center; */
+}
+
+.contact-us label,
+.contact-us input,
+.contact-us button {
+    margin: 10px;
+    padding: 8px;
+    border: 1px solid #060404;
+    border-radius: 5px;
+}
+
+.contact-us label{
+    text-align: left;
+}
+
+.contact-us button {
+    background-color: #06cac7;
+    color: #233831;
+    cursor: pointer;
+}
+
+.contact-us button:hover {
+    background-color: #00e2ea;
+}
+
